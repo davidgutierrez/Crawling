@@ -1,23 +1,23 @@
-package co.gov.enumeraciones;
+package co.edu.enumeraciones;
 
 
 public enum EnumFacultades {
 	
-	FACULTAD_ADMINISTRACION("Facultad de Administración"),
-	FACULTAD_ARQUITECTURA("Facultad de Arquitectura y Diseño"),
+	FACULTAD_ADMINISTRACION("Facultad de AdministraciÃ³n"),
+	FACULTAD_ARQUITECTURA("Facultad de Arquitectura y DiseÃ±o"),
 	FACULTAD_ARTES("Facultad de Artes y Humanidades"),
 	FACULTAD_CIENCIAS("Facultad de Ciencias"),
 	FACULTAD_SOCIALES("Facultad de Ciencias Sociales"),  
 	FACULTAD_DERECHO("Facultad de Derecho"),
-	FACULTAD_ECONOMIA("Facultad de Economía"),  
-	FACULTAD_INGENIERIA("Facultad de Ingeniería"),  
+	FACULTAD_ECONOMIA("Facultad de EconomÃ­a"),  
+	FACULTAD_INGENIERIA("Facultad de IngenierÃ­a"),  
 	FACULTAD_MEDICINA("Facultad de Medicina"),
-	DEPARTAMENTO_ANTROPOLOGIA("Departamento de Antropología"),  
+	DEPARTAMENTO_ANTROPOLOGIA("Departamento de AntropologÃ­a"),  
 	DEPARTAMENTO_ARQUITECTURA("Departamento de Arquitectura"),
 	DEPARTAMENTO_ARTES("Departamento de Arte"),
 	FACULTAD_CIENCIA_POLITICA("Departamento de Ciencia Politica"),  
-	DEPARTAMENTO_BIOLOGIA("Departamento de Ciencias Biológicas"), 
-	DEPARTAMENTO_DISEÑO("Departamento de Diseño"),
+	DEPARTAMENTO_BIOLOGIA("Departamento de Ciencias BiolÃ³gicas"), 
+	DEPARTAMENTO_DISEÃ‘O("Departamento de DiseÃ±o"),
 	DEPARTAMENTO_FILOSOFIA("Departamento de Filosofia"),  
 	DEPARTAMENTO_FISICA("Departamento de Fisica");  
 	
