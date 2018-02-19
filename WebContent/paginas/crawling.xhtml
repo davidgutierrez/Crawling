@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<f:view contentType="text/html">
+	<h:head>
+		<title>TALLER UNO</title>
+	</h:head>
+	<h:body >
+		<h:form id="forma" >
+			<h:outputLabel for="url" value="direccion URL:" />
+			<h:inputText id="url" value="#{proccesPage.url}"  style="width:20%" required="true"/>
+			<br/>
+			<h:commandButton value="Recargar direcciones" action="#{proccesPage.processPage}" />
+			<h:commandButton value="Volver" action="#{principal.volver}" />
+			<h:dataTable var="profesores" value="#{proccesPage.infoProfesores}" >
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Nombre</f:facet>
+    				<!-- row record -->
+    				#{profesores.nombre}
+				</h:column>
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Escalafon</f:facet>
+    				<!-- row record -->
+    				#{profesores.escalafon}
+				</h:column>
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Dependencia</f:facet>
+    				<!-- row record -->
+    				#{profesores.dependencia}
+				</h:column>
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Email</f:facet>
+    				<!-- row record -->
+    				#{profesores.email}
+				</h:column>
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Extencion telefonica</f:facet>
+    				<!-- row record -->
+    				#{profesores.extencionTelefonica}
+				</h:column>
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Sitio WEB</f:facet>
+    				<!-- row record -->
+    				#{profesores.sitioWeb}
+				</h:column>
+			</h:dataTable>
+		</h:form>
+	</h:body>
+</f:view>
+</html>

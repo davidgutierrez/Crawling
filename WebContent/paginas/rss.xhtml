@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<f:view contentType="text/html">
+	<h:head>
+		<title>TALLER UNO</title>
+	</h:head>
+	<h:body >
+		<h:form id="forma" >
+			<h:outputLabel for="paramConsulta" value="Parametro de consulta:" />
+			<h:inputText id="paramConsulta" value="#{filterRSS.parametroConsulta}" style="width:20%"/>
+			<h:commandButton value="Consulta RSS" action="#{filterRSS.processRss}" />
+			<h:commandButton value="Volver" action="#{principal.volver}" />
+			<h:dataTable var="consulta" value="#{proccesPage.infoProfesores}" >
+				<h:column >
+					<!-- column header -->
+    				<f:facet name="header">Resultado</f:facet>
+    				<!-- row record -->
+    				#{consulta}
+				</h:column>
+				
+			</h:dataTable>
+		</h:form>
+	</h:body>
+</f:view>
+</html>
