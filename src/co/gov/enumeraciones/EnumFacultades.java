@@ -1,4 +1,4 @@
-package co.edu.enumeraciones;
+package co.edu.uniandes.enumeraciones;
 
 
 public enum EnumFacultades {
